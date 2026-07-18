@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Booking | Madisar Tales</title>
+  <link rel="stylesheet" href="eventbooking.css">
+</head>
+<body>
+
+  <header>
+    <h1>Book Your Event</h1>
+    <p>Celebrate special moments with Madisar Tales</p>
+  </header>
+
+  <div class="booking-container">
+    <form id="booking-form">
+      
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="event-type">Event Type</label>
+        <select id="event-type" required>
+          <option value="">Select</option>
+          <option value="wedding">Wedding</option>
+          <option value="birthday">Birthday</option>
+          <option value="corporate">Corporate</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="guests">Number of Guests</label>
+        <input type="number" id="guests" min="1" required>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Event Date</label>
+        <input type="date" id="date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="time">Event Time</label>
+        <input type="time" id="time" required>
+      </div>
+
+      <div class="form-group">
+        <label for="requests">Special Requests</label>
+        <textarea id="requests" placeholder="Any special requirements..."></textarea>
+      </div>
+
+      <button type="submit">Book Event</button>
+
+    </form>
+  </div>
+
+  <script src="eventbooking.js"></script>
+</body>
+</html>

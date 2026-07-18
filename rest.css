@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', serif;
+}
+
+/* ---------- HEADER ---------- */
+.main-header {
+    background-color: peachpuff;
+    padding: 10px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.logo-container h1 {
+    color: maroon;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: maroon;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+.login-btn {
+    margin-left: auto;
+    background-color: maroon;
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.login-btn:hover {
+    background-color: black;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+   background-image: url(bgmain.png);
+    background-size: cover;
+    background-position: center;
+    height: 150vh;
+    border-radius: 20px;
+}
+
+
+/* ---------- ABOUT ---------- */
+.about {
+    background-image: url(bg2.png);
+    padding: 50px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.about h2 {
+    text-align: center;
+    color: maroon;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* ---------- TABLE BOOK ---------- */
+.tablebook {
+    background-image: url(bg3.png);
+    background-size: cover;
+    background-position: center;
+    height: 150vh;
+    border-radius: 20px;
+}
+
+.tablebook h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* ---------- FOOTER ---------- */
+.contact {
+    background-image: url(bg2.png);
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.contact address {
+    font-style: normal;
+    line-height: 1.8;
+}
+
+copyright {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .login-btn {
+        margin-left: 0;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+}

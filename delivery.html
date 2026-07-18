@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Online Delivery | Madisar Tales</title>
+  <link rel="stylesheet" href="delivery.css">
+</head>
+<body>
+
+<header>
+  <h1>Madisar Tales</h1>
+  <p>Eat. Relish. Remember!</p>
+  <div class="cart-btn" onclick="toggleCart()">🛒 Cart (<span id="cart-count">0</span>)</div>
+</header>
+
+<!-- ================= MENU SECTIONS ================= -->
+
+<h2>BREAKFAST</h2>
+<div class="food-section">
+  <div class="food-card">
+    <img src="main course-tiffin/adairecipe.jpg" alt="Adai">
+    <div class="food-info">
+      <h3>Adai</h3>
+      <p>Protein-rich lentils, thick and lightly spiced.</p>
+      <span class="price">₹60</span>
+      <button onclick="addToCart('Adai', 60)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="main course-tiffin/neerdosa.jpg" alt="Neer Dosa">
+    <div class="food-info">
+      <h3>Neer Dosa</h3>
+      <p>Thin, soft rice crepe, delicate simplicity.</p>
+      <span class="price">₹50</span>
+      <button onclick="addToCart('Neer Dosa', 50)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="main course-tiffin/ravadosa.jpg" alt="Rava Dosa">
+    <div class="food-info">
+      <h3>Rava Dosa</h3>
+      <p>Crispy, savory semolina dosa. Light and flavorful.</p>
+      <span class="price">₹65</span>
+      <button onclick="addToCart('Rava Dosa', 65)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="main course-tiffin/setdosa.webp" alt="Set Dosa">
+    <div class="food-info">
+      <h3>Set Dosa</h3>
+      <p>Soft, spongy multiple dosas, perfect with chutney.</p>
+      <span class="price">₹70</span>
+      <button onclick="addToCart('Set Dosa', 70)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="main course-tiffin/sevai.jpg" alt="Sevai">
+    <div class="food-info">
+      <h3>Sevai</h3>
+      <p>Steamed rice noodles lightly seasoned. Tasty & simple.</p>
+      <span class="price">₹55</span>
+      <button onclick="addToCart('Sevai', 55)">Order</button>
+    </div>
+  </div>
+</div>
+
+<h2>LUNCH</h2>
+<div class="food-section">
+  <div class="food-card">
+    <img src="main course-lunch/lemonrice.jpg" alt="Lemon Rice">
+    <div class="food-info">
+      <h3>Lemon Rice</h3>
+      <p>Fragrant rice with fresh lemon & mild spices.</p>
+      <span class="price">₹80</span>
+      <button onclick="addToCart('Lemon Rice', 80)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="main course-lunch/puliyodharai.webp" alt="Puliyodharai">
+    <div class="food-info">
+      <h3>Puliyodharai</h3>
+      <p>Tamarind rice with tangy, spiced flavors.</p>
+      <span class="price">₹90</span>
+      <button onclick="addToCart('Puliyodharai', 90)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="main course-lunch/SambarSadam.jpg" alt="Sambar Sadam">
+    <div class="food-info">
+      <h3>Sambar Sadam</h3>
+      <p>Rice with lentil & vegetable sambar, classic taste.</p>
+      <span class="price">₹85</span>
+      <button onclick="addToCart('Sambar Sadam', 85)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="main course-lunch/thayirsadam.webp" alt="Thayir Sadam">
+    <div class="food-info">
+      <h3>Thayir Sadam</h3>
+      <p>Curd rice with subtle spices, soothing & tasty.</p>
+      <span class="price">₹80</span>
+      <button onclick="addToCart('Thayir Sadam', 80)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="main course-lunch/thengaisadham.jpg" alt="Thengai Sadam">
+    <div class="food-info">
+      <h3>Thengai Sadam</h3>
+      <p>Coconut rice, fragrant & flavorful traditional dish.</p>
+      <span class="price">₹90</span>
+      <button onclick="addToCart('Thengai Sadam', 90)">Order</button>
+    </div>
+  </div>
+</div>
+
+<h2>KOLAMBU</h2>
+<div class="food-section">
+  <div class="food-card">
+    <img src="kolambu/kathirikaigosthu.jpg" alt="Kathirikaigosthu">
+    <div class="food-info">
+      <h3>Kathirikaigosthu</h3>
+      <p>Brinjal curry with rich spices & authentic flavor.</p>
+      <span class="price">₹120</span>
+      <button onclick="addToCart('Kathirikaigosthu', 120)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="kolambu/Morkuzhambu.jpg" alt="Mor Kuzhambu">
+    <div class="food-info">
+      <h3>Mor Kuzhambu</h3>
+      <p>Spiced yogurt curry with vegetables, tangy & soothing.</p>
+      <span class="price">₹110</span>
+      <button onclick="addToCart('Mor Kuzhambu', 110)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="kolambu/paruppurundai.jpg" alt="Paruppu Urundai Kuzhambu">
+    <div class="food-info">
+      <h3>Paruppu Urundai Kuzhambu</h3>
+      <p>Lentil dumplings in tamarind gravy, rich taste.</p>
+      <span class="price">₹130</span>
+      <button onclick="addToCart('Paruppu Urundai Kuzhambu', 130)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="kolambu/poondupulikolambu.jpg" alt="Poondu Pulikolambu">
+    <div class="food-info">
+      <h3>Poondu Pulikolambu</h3>
+      <p>Garlic tamarind curry with strong aromatic flavor.</p>
+      <span class="price">₹125</span>
+      <button onclick="addToCart('Poondu Pulikolambu', 125)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="kolambu/vathakolambu.jpg" alt="Vatha Kuzhambu">
+    <div class="food-info">
+      <h3>Vatha Kuzhambu</h3>
+      <p>Sun-dried berry curry with tamarind, tangy & spicy.</p>
+      <span class="price">₹120</span>
+      <button onclick="addToCart('Vatha Kuzhambu', 120)">Order</button>
+    </div>
+  </div>
+</div>
+
+<h2>PORIYAL & CHUTNEYS</h2>
+<div class="food-section">
+  <div class="food-card">
+    <img src="poriyalschutneys/cabbageporiyal.webp" alt="Cabbage Poriyal">
+    <div class="food-info">
+      <h3>Cabbage Poriyal</h3>
+      <p>Lightly spiced cabbage stir fry, healthy & tasty.</p>
+      <span class="price">₹70</span>
+      <button onclick="addToCart('Cabbage Poriyal', 70)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="poriyalschutneys/pachaikeeraithovayal.jpg" alt="Pachai Keerai Thovayal">
+    <div class="food-info">
+      <h3>Pachai Keerai Thovayal</h3>
+      <p>Spinach chutney, lightly spiced and nutritious.</p>
+      <span class="price">₹60</span>
+      <button onclick="addToCart('Pachai Keerai Thovayal', 60)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="poriyalschutneys/parupuusili.jpg" alt="Paruppu Usili">
+    <div class="food-info">
+      <h3>Paruppu Usili</h3>
+      <p>Crumbled lentil curry with mild spices, protein-rich.</p>
+      <span class="price">₹80</span>
+      <button onclick="addToCart('Paruppu Usili', 80)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="poriyalschutneys/potatoporiyal.jpg" alt="Potato Poriyal">
+    <div class="food-info">
+      <h3>Potato Poriyal</h3>
+      <p>Simple stir-fried potatoes with spices & curry leaves.</p>
+      <span class="price">₹70</span>
+      <button onclick="addToCart('Potato Poriyal', 70)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="poriyalschutneys/thogayal.jpg" alt="Thogayal">
+    <div class="food-info">
+      <h3>Thogayal</h3>
+      <p>Spicy lentil paste, perfect as a side for rice.</p>
+      <span class="price">₹65</span>
+      <button onclick="addToCart('Thogayal', 65)">Order</button>
+    </div>
+  </div>
+</div>
+
+<h2>PICKLES</h2>
+<div class="food-section">
+  <div class="food-card">
+    <img src="pickels/inijpuli.webp" alt="Inji Puli">
+    <div class="food-info">
+      <h3>Inji Puli</h3>
+      <p>Sweet & sour ginger-tamarind pickle, traditional taste.</p>
+      <span class="price">₹50</span>
+      <button onclick="addToCart('Inji Puli', 50)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="pickels/lemonpickel.jpg" alt="Lemon Pickle">
+    <div class="food-info">
+      <h3>Lemon Pickle</h3>
+      <p>Zesty lemon pickle, tangy & spicy.</p>
+      <span class="price">₹45</span>
+      <button onclick="addToCart('Lemon Pickle', 45)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="pickels/mangaaiurugaai.jpg" alt="Mangaai Urugaai">
+    <div class="food-info">
+      <h3>Mangaai Urugaai</h3>
+      <p>Mango pickle, tangy & flavorful.</p>
+      <span class="price">₹55</span>
+      <button onclick="addToCart('Mangaai Urugaai', 55)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="pickels/poonduurugaai.jpg" alt="Poondu Urugaai">
+    <div class="food-info">
+      <h3>Poondu Urugaai</h3>
+      <p>Garlic pickle, aromatic & spicy.</p>
+      <span class="price">₹60</span>
+      <button onclick="addToCart('Poondu Urugaai', 60)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="pickels/vadumaangai.webp" alt="Vadu Mango">
+    <div class="food-info">
+      <h3>Vadu Mango</h3>
+      <p>Sun-dried mango pickle, tangy traditional flavor.</p>
+      <span class="price">₹55</span>
+      <button onclick="addToCart('Vadu Mango', 55)">Order</button>
+    </div>
+  </div>
+</div>
+
+<h2>SWEETS</h2>
+<div class="food-section">
+  <div class="food-card">
+    <img src="sweets/kolukattai.jpg" alt="Kolukattai">
+    <div class="food-info">
+      <h3>Kolukattai</h3>
+      <p>Steamed sweet dumplings with jaggery & coconut.</p>
+      <span class="price">₹40</span>
+      <button onclick="addToCart('Kolukattai', 40)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="sweets/Milk-Mysore-Pak.webp" alt="Milk Mysore Pak">
+    <div class="food-info">
+      <h3>Milk Mysore Pak</h3>
+      <p>Rich sweet made with ghee, milk & sugar.</p>
+      <span class="price">₹60</span>
+      <button onclick="addToCart('Milk Mysore Pak', 60)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="sweets/paalkolukatai.webp" alt="Paalkolukatai">
+    <div class="food-info">
+      <h3>Paalkolukatai</h3>
+      <p>Sweet dumplings soaked in milk, soft & creamy.</p>
+      <span class="price">₹45</span>
+      <button onclick="addToCart('Paalkolukatai', 45)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="sweets/sakkarai-pongal.jpg" alt="Sakkarai Pongal">
+    <div class="food-info">
+      <h3>Sakkarai Pongal</h3>
+      <p>Sweet rice pudding with jaggery & ghee.</p>
+      <span class="price">₹50</span>
+      <button onclick="addToCart('Sakkarai Pongal', 50)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="sweets/suyam.jpg" alt="Suyam">
+    <div class="food-info">
+      <h3>Suyam</h3>
+      <p>Traditional sweet with nuts and jaggery.</p>
+      <span class="price">₹55</span>
+      <button onclick="addToCart('Suyam', 55)">Order</button>
+    </div>
+  </div>
+</div>
+
+<h2>SNACKS</h2>
+<div class="food-section">
+  <div class="food-card">
+    <img src="snacks/muruku.webp" alt="Muruku">
+    <div class="food-info">
+      <h3>Muruku</h3>
+      <p>Crunchy, deep-fried snack, perfect tea-time bite.</p>
+      <span class="price">₹35</span>
+      <button onclick="addToCart('Muruku', 35)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="snacks/thattai.webp" alt="Thattai">
+    <div class="food-info">
+      <h3>Thattai</h3>
+      <p>Crispy rice flour snack, lightly spiced.</p>
+      <span class="price">₹30</span>
+      <button onclick="addToCart('Thattai', 30)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="snacks/Uppu-Seedai.webp" alt="Uppu Seedai">
+    <div class="food-info">
+      <h3>Uppu Seedai</h3>
+      <p>Salted deep-fried rice balls, crunchy & tasty.</p>
+      <span class="price">₹35</span>
+      <button onclick="addToCart('Uppu Seedai', 35)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="snacks/vadai.webp" alt="Vadai">
+    <div class="food-info">
+      <h3>Vadai</h3>
+      <p>Fried lentil donut, crispy outside, soft inside.</p>
+      <span class="price">₹40</span>
+      <button onclick="addToCart('Vadai', 40)">Order</button>
+    </div>
+  </div>
+
+  <div class="food-card">
+    <img src="snacks/vella seedai.jpg" alt="Vella Seedai">
+    <div class="food-info">
+      <h3>Vella Seedai</h3>
+      <p>Sweet fried rice balls, crunchy & traditional.</p>
+      <span class="price">₹45</span>
+      <button onclick="addToCart('Vella Seedai', 45)">Order</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CART SIDEBAR ================= -->
+<div class="cart" id="cart">
+  <h3>Your Cart</h3>
+  <ul id="cart-items"></ul>
+  <p class="total">Total: ₹<span id="total">0</span></p>
+  <button class="checkout" onclick="placeOrder()">Place Order</button>
+</div>
+
+<script src="cart.js"></script>
+</body>
+</html>

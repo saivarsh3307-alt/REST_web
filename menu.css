@@ -1,0 +1,472 @@
+header
+{
+    text-align: center;
+    background-color: burlywood;
+    border-radius: 20px;
+    bottom: 20px;
+}
+.pic1
+{
+    display: flex;
+    gap: 50px;
+}
+.bags-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.bag-card {
+    width: 180px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bag-card summary {
+    list-style: none;
+}
+
+.bag-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.bag-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.bag-card img:hover {
+    transform: scale(1.05);
+}
+
+.bag-info {
+    margin-top: 10px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    font-size: 14px;
+}
+.pic2
+{
+    display: flex;
+    gap: 50px;
+}
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.box-card {
+    width: 180px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.box-card summary {
+    list-style: none;
+}
+
+.box-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.box-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.box-card img:hover {
+    transform: scale(1.05);
+}
+
+.box-info {
+    margin-top: 10px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    font-size: 14px;
+}
+.pic3
+{
+    display: flex;
+    gap: 50px;
+}
+.pen-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.pen-card {
+    width: 180px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pen-card summary {
+    list-style: none;
+}
+
+.pen-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.pen-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.pen-card img:hover {
+    transform: scale(1.05);
+}
+
+.pen-info {
+    margin-top: 10px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    font-size: 14px;
+}
+.pic4
+{
+    display: flex;
+    gap: 50px;
+}
+.pencil-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.pencil-card {
+    width: 180px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pencil-card summary {
+    list-style: none;
+}
+
+.pencil-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.pencil-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.pencil-card img:hover {
+    transform: scale(1.05);
+}
+
+.pencil-info {
+    margin-top: 10px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    font-size: 14px;
+}
+
+.pic5
+{
+    display: flex;
+    gap: 50px;
+}
+.ten-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.ten-card {
+    width: 180px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ten-card summary {
+    list-style: none;
+}
+
+.ten-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.ten-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.ten-card img:hover {
+    transform: scale(1.05);
+}
+
+.ten-info {
+    margin-top: 10px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    font-size: 14px;
+}
+.pic6
+{
+    display: flex;
+    gap: 50px;
+}
+.den-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.den-card {
+    width: 180px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.den-card summary {
+    list-style: none;
+}
+
+.den-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.den-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.den-card img:hover {
+    transform: scale(1.05);
+}
+
+.den-info {
+    margin-top: 10px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    font-size: 14px;
+}
+.pic7
+{
+    display: flex;
+    gap: 50px;
+}
+.run-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.run-card {
+    width: 180px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.run-card summary {
+    list-style: none;
+}
+
+.run-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.run-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.run-card img:hover {
+    transform: scale(1.05);
+}
+
+.run-info {
+    margin-top: 10px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    font-size: 14px;
+}
+body
+{
+    text-align: center;
+    background-image: url(bg2.png);
+    border-radius: 20px;
+    bottom: 20px;
+}
+/* ===== GLOBAL ENHANCEMENTS ===== */
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    letter-spacing: 1px;
+}
+
+/* Smooth appearance */
+details {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+details:hover {
+    transform: translateY(-6px);
+}
+
+/* ===== IMAGE ENHANCEMENT ===== */
+details img {
+    object-fit: cover;
+    filter: brightness(0.98) contrast(1.05);
+}
+
+/* ===== CARD GLOW EFFECT ===== */
+.bag-card img,
+.box-card img,
+.pen-card img,
+.pencil-card img,
+.ten-card img,
+.den-card img,
+.run-card img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bag-card img:hover,
+.box-card img:hover,
+.pen-card img:hover,
+.pencil-card img:hover,
+.ten-card img:hover,
+.den-card img:hover,
+.run-card img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+}
+
+/* ===== INFO BOX UPGRADE ===== */
+.bag-info,
+.box-info,
+.pen-info,
+.pencil-info,
+.ten-info,
+.den-info,
+.run-info {
+    background: linear-gradient(to bottom, #ffffff, #fff8f2);
+    border-left: 4px solid #b65f28;
+}
+
+/* ===== TYPOGRAPHY INSIDE CARDS ===== */
+.bag-info h4,
+.box-info h4,
+.pen-info h4,
+.pencil-info h4,
+.ten-info h4,
+.den-info h4,
+.run-info h4 {
+    font-size: 15px;
+    color: #7a3e1d;
+    margin-bottom: 6px;
+}
+
+.bag-info p,
+.box-info p,
+.pen-info p,
+.pencil-info p,
+.ten-info p,
+.den-info p,
+.run-info p,
+pre {
+    font-size: 13px;
+    color: #444;
+}
+
+/* ===== SECTION SPACING ===== */
+.pic1, .pic2, .pic3, .pic4, .pic5, .pic6, .pic7 {
+    margin-bottom: 60px;
+}
+
+/* ===== HEADER POLISH ===== */
+header {
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    color: #5a2e17;
+    padding: 10px;
+}
+
+/* ===== SUBTITLE STYLE ===== */
+h2 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: #6b341c;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* ===== DETAILS OPEN ANIMATION ===== */
+details[open] .bag-info,
+details[open] .box-info,
+details[open] .pen-info,
+details[open] .pencil-info,
+details[open] .ten-info,
+details[open] .den-info,
+details[open] .run-info {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== RESPONSIVE IMPROVEMENT ===== */
+@media (max-width: 768px) {
+    .bags-container,
+    .box-container,
+    .pen-container,
+    .pencil-container,
+    .ten-container,
+    .den-container,
+    .run-container {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}

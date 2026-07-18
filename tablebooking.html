@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Table Booking | Madisar Tales</title>
+  <link rel="stylesheet" href="tablebooking.css">
+</head>
+<body>
+
+  <header>
+    <h1>Reserve Your Table</h1>
+    <p>Enjoy a delightful meal with Madisar Tales</p>
+  </header>
+
+  <div class="booking-container">
+    <form id="table-form">
+      
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="guests">Number of Guests</label>
+        <input type="number" id="guests" min="1" required>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Booking Date</label>
+        <input type="date" id="date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="time">Booking Time</label>
+        <input type="time" id="time" required>
+      </div>
+
+      <!-- Prime Membership Options -->
+      <div class="form-group">
+        <label>Prime Membership Offer</label>
+        <div class="membership-options">
+          <input type="radio" name="membership" value="None" id="no-prime" checked>
+          <label for="no-prime">No Membership</label><br>
+
+          <input type="radio" name="membership" value="Silver" id="silver">
+          <label for="silver">Silver - 10% off on food</label><br>
+
+          <input type="radio" name="membership" value="Gold" id="gold">
+          <label for="gold">Gold - 20% off + Complimentary Dessert</label><br>
+
+          <input type="radio" name="membership" value="Platinum" id="platinum">
+          <label for="platinum">Platinum - 30% off + Dessert + Priority Seating</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="requests">Special Requests</label>
+        <textarea id="requests" placeholder="Any special requests..."></textarea>
+      </div>
+
+      <button type="submit">Book Table</button>
+
+    </form>
+  </div>
+
+  <script src="tablebooking.js"></script>
+</body>
+</html>

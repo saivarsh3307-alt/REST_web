@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery | Madisar Tales</title>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+  <header>
+    <h1>Our Gallery</h1>
+    <p>A glimpse of Madisar Tales traditions & flavours</p>
+  </header>
+
+  <section class="gallery-container">
+    <img src="gallery/ambience.png" alt="Food 1" onclick="openLightbox(this)">
+    <img src="gallery/breakfast spl.jpg" alt="Food 2" onclick="openLightbox(this)">
+    <img src="gallery/lunch spl.jpg" alt="Food 3" onclick="openLightbox(this)">
+    <img src="gallery/signature dish.jpg" alt="Food 4" onclick="openLightbox(this)">
+    <img src="gallery/snacks spl.webp" alt="Food 5" onclick="openLightbox(this)">
+    <img src="gallery/sweetspl.webp" alt="Food 6" onclick="openLightbox(this)">
+    <img src="gallery/splfoods.jpg" alt="Food 7" onclick="openLightbox(this)">
+    <img src="gallery/serving style.jpg" alt="Food 8" onclick="openLightbox(this)">
+    <img src="gallery/masalagrinding.webp" alt="Food 9" onclick="openLightbox(this)">
+    <img src="gallery/ingredients.jpg" alt="Food 10" onclick="openLightbox(this)">
+    <img src="gallery/cateringservices.webp" alt="Food 11" onclick="openLightbox(this)">
+    <img src="gallery/happycustomers.jpg" alt="Food 12" onclick="openLightbox(this)">
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img">
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
